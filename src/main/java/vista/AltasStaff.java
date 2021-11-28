@@ -33,7 +33,7 @@ public class AltasStaff extends javax.swing.JFrame {
     
     public static String FechaActual(){
         Date fechaA = new Date();
-        SimpleDateFormat fechaF = new SimpleDateFormat("DD/MM/YYYY");
+        SimpleDateFormat fechaF = new SimpleDateFormat("dd/MM/YYYY");
         
         return fechaF.format(fechaA);
 }
