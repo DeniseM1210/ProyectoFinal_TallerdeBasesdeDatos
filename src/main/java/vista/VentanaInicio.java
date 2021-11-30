@@ -45,10 +45,10 @@ public class VentanaInicio extends javax.swing.JFrame {
         jMenuCambiosA = new javax.swing.JMenuItem();
         jMenuConsultasA = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuAltasCo = new javax.swing.JMenuItem();
+        jMenuBajasCo = new javax.swing.JMenuItem();
+        jMenuCambiosCo = new javax.swing.JMenuItem();
+        jMenuConsultasCo = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem9 = new javax.swing.JMenuItem();
         jMenuItem10 = new javax.swing.JMenuItem();
@@ -99,17 +99,37 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         jMenu2.setText("Country");
 
-        jMenuItem5.setText("Add");
-        jMenu2.add(jMenuItem5);
+        jMenuAltasCo.setText("Add");
+        jMenuAltasCo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuAltasCoActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuAltasCo);
 
-        jMenuItem6.setText("Delete");
-        jMenu2.add(jMenuItem6);
+        jMenuBajasCo.setText("Delete");
+        jMenuBajasCo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuBajasCoActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuBajasCo);
 
-        jMenuItem7.setText("Update");
-        jMenu2.add(jMenuItem7);
+        jMenuCambiosCo.setText("Update");
+        jMenuCambiosCo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuCambiosCoActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuCambiosCo);
 
-        jMenuItem8.setText("Search");
-        jMenu2.add(jMenuItem8);
+        jMenuConsultasCo.setText("Search");
+        jMenuConsultasCo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuConsultasCoActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuConsultasCo);
 
         jMenuBar1.add(jMenu2);
 
@@ -175,6 +195,30 @@ public class VentanaInicio extends javax.swing.JFrame {
         ba.setVisible(true);
     }//GEN-LAST:event_jMenuBajasAActionPerformed
 
+    private void jMenuAltasCoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuAltasCoActionPerformed
+        // TODO add your handling code here:
+        AltasCountry alCo = new AltasCountry();
+        alCo.setVisible(true);
+    }//GEN-LAST:event_jMenuAltasCoActionPerformed
+
+    private void jMenuBajasCoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuBajasCoActionPerformed
+        // TODO add your handling code here:
+        BajasCountry baCo = new BajasCountry();
+        baCo.setVisible(true);
+    }//GEN-LAST:event_jMenuBajasCoActionPerformed
+
+    private void jMenuCambiosCoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuCambiosCoActionPerformed
+        // TODO add your handling code here:
+        CambiosCountry caCo = new CambiosCountry();
+        caCo.setVisible(true);
+    }//GEN-LAST:event_jMenuCambiosCoActionPerformed
+
+    private void jMenuConsultasCoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuConsultasCoActionPerformed
+        // TODO add your handling code here:
+        ConsultasCountry coCo = new ConsultasCountry();
+        coCo.setVisible(true);
+    }//GEN-LAST:event_jMenuConsultasCoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -216,17 +260,17 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuItem jMenuAgregarA;
+    private javax.swing.JMenuItem jMenuAltasCo;
     private javax.swing.JMenuItem jMenuBajasA;
+    private javax.swing.JMenuItem jMenuBajasCo;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuCambiosA;
+    private javax.swing.JMenuItem jMenuCambiosCo;
     private javax.swing.JMenuItem jMenuConsultasA;
+    private javax.swing.JMenuItem jMenuConsultasCo;
     private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem12;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
     // End of variables declaration//GEN-END:variables
       
