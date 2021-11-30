@@ -56,7 +56,7 @@ public class AltasCity extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setText("Update City");
+        jLabel1.setText("Add City");
 
         jLabel2.setText("Id City");
 

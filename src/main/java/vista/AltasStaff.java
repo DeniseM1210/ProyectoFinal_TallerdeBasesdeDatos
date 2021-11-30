@@ -39,7 +39,6 @@ public class AltasStaff extends javax.swing.JFrame {
 }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -59,7 +58,7 @@ public class AltasStaff extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setText("Update Actor");
+        jLabel1.setText("Add Actor");
 
         jLabel2.setText("Id Actor");
 
