@@ -38,6 +38,7 @@ public class VentanaInicio extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        dp = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuAgregarA = new javax.swing.JMenuItem();
@@ -176,16 +177,16 @@ public class VentanaInicio extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(181, 181, 181)
-                .addComponent(jLabel1)
-                .addContainerGap(194, Short.MAX_VALUE))
+                .addGap(180, 180, 180)
+                .addComponent(jLabel1))
+            .addComponent(dp, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(127, 127, 127)
-                .addComponent(jLabel1)
-                .addContainerGap(161, Short.MAX_VALUE))
+                .addGap(130, 130, 130)
+                .addComponent(jLabel1))
+            .addComponent(dp, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -194,72 +195,84 @@ public class VentanaInicio extends javax.swing.JFrame {
     private void jMenuAgregarAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuAgregarAActionPerformed
         // TODO add your handling code here:
         AltasStaff alAc = new AltasStaff();
+        this.setVisible(false);
         alAc.setVisible(true);
     }//GEN-LAST:event_jMenuAgregarAActionPerformed
 
     private void jMenuCambiosAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuCambiosAActionPerformed
         // TODO add your handling code here:
         CambiosActor ca = new CambiosActor();
+        this.setVisible(false);
         ca.setVisible(true);
     }//GEN-LAST:event_jMenuCambiosAActionPerformed
 
     private void jMenuConsultasAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuConsultasAActionPerformed
         // TODO add your handling code here:
         ConsultasActor coA = new ConsultasActor();
+        this.setVisible(false);
         coA.setVisible(true);
     }//GEN-LAST:event_jMenuConsultasAActionPerformed
 
     private void jMenuBajasAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuBajasAActionPerformed
         // TODO add your handling code here:
         BajasActor ba = new BajasActor();
+        this.setVisible(false);
         ba.setVisible(true);
     }//GEN-LAST:event_jMenuBajasAActionPerformed
 
     private void jMenuAltasCoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuAltasCoActionPerformed
         // TODO add your handling code here:
         AltasCountry alCo = new AltasCountry();
+        this.setVisible(false);
         alCo.setVisible(true);
     }//GEN-LAST:event_jMenuAltasCoActionPerformed
 
     private void jMenuBajasCoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuBajasCoActionPerformed
         // TODO add your handling code here:
         BajasCountry baCo = new BajasCountry();
+        this.setVisible(false);
         baCo.setVisible(true);
     }//GEN-LAST:event_jMenuBajasCoActionPerformed
 
     private void jMenuCambiosCoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuCambiosCoActionPerformed
         // TODO add your handling code here:
         CambiosCountry caCo = new CambiosCountry();
+        this.setVisible(false);
         caCo.setVisible(true);
     }//GEN-LAST:event_jMenuCambiosCoActionPerformed
 
     private void jMenuConsultasCoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuConsultasCoActionPerformed
         // TODO add your handling code here:
         ConsultasCountry coCo = new ConsultasCountry();
+        this.setVisible(false);
         coCo.setVisible(true);
     }//GEN-LAST:event_jMenuConsultasCoActionPerformed
 
     private void jMenuAltasCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuAltasCityActionPerformed
         // TODO add your handling code here:
         AltasCity alCi = new AltasCity();
+        this.setVisible(false);
         alCi.setVisible(true);
     }//GEN-LAST:event_jMenuAltasCityActionPerformed
 
     private void jMenuBajasCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuBajasCityActionPerformed
         // TODO add your handling code here:
         BajasCity baCi = new BajasCity();
+        this.setVisible(false);
         baCi.setVisible(true);
     }//GEN-LAST:event_jMenuBajasCityActionPerformed
 
     private void jMenuCambiosCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuCambiosCityActionPerformed
         // TODO add your handling code here:
         CambiosCity caCi = new CambiosCity();
+        this.setVisible(false);
         caCi.setVisible(true);
     }//GEN-LAST:event_jMenuCambiosCityActionPerformed
 
     private void jMenuConsultasCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuConsultasCityActionPerformed
         // TODO add your handling code here:
         ConsultasCity coCi = new ConsultasCity();
+        this.setVisible(false);
         coCi.setVisible(true);
     }//GEN-LAST:event_jMenuConsultasCityActionPerformed
 
@@ -299,6 +312,7 @@ public class VentanaInicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDesktopPane dp;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
