@@ -50,10 +50,10 @@ public class VentanaInicio extends javax.swing.JFrame {
         jMenuCambiosCo = new javax.swing.JMenuItem();
         jMenuConsultasCo = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem9 = new javax.swing.JMenuItem();
-        jMenuItem10 = new javax.swing.JMenuItem();
-        jMenuItem11 = new javax.swing.JMenuItem();
-        jMenuItem12 = new javax.swing.JMenuItem();
+        jMenuAltasCity = new javax.swing.JMenuItem();
+        jMenuBajasCity = new javax.swing.JMenuItem();
+        jMenuCambiosCity = new javax.swing.JMenuItem();
+        jMenuConsultasCity = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 102, 102));
@@ -135,17 +135,37 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         jMenu3.setText("City");
 
-        jMenuItem9.setText("Add");
-        jMenu3.add(jMenuItem9);
+        jMenuAltasCity.setText("Add");
+        jMenuAltasCity.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuAltasCityActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuAltasCity);
 
-        jMenuItem10.setText("Delete");
-        jMenu3.add(jMenuItem10);
+        jMenuBajasCity.setText("Delete");
+        jMenuBajasCity.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuBajasCityActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuBajasCity);
 
-        jMenuItem11.setText("Update");
-        jMenu3.add(jMenuItem11);
+        jMenuCambiosCity.setText("Update");
+        jMenuCambiosCity.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuCambiosCityActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuCambiosCity);
 
-        jMenuItem12.setText("Search");
-        jMenu3.add(jMenuItem12);
+        jMenuConsultasCity.setText("Search");
+        jMenuConsultasCity.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuConsultasCityActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuConsultasCity);
 
         jMenuBar1.add(jMenu3);
 
@@ -219,6 +239,30 @@ public class VentanaInicio extends javax.swing.JFrame {
         coCo.setVisible(true);
     }//GEN-LAST:event_jMenuConsultasCoActionPerformed
 
+    private void jMenuAltasCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuAltasCityActionPerformed
+        // TODO add your handling code here:
+        AltasCity alCi = new AltasCity();
+        alCi.setVisible(true);
+    }//GEN-LAST:event_jMenuAltasCityActionPerformed
+
+    private void jMenuBajasCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuBajasCityActionPerformed
+        // TODO add your handling code here:
+        BajasCity baCi = new BajasCity();
+        baCi.setVisible(true);
+    }//GEN-LAST:event_jMenuBajasCityActionPerformed
+
+    private void jMenuCambiosCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuCambiosCityActionPerformed
+        // TODO add your handling code here:
+        CambiosCity caCi = new CambiosCity();
+        caCi.setVisible(true);
+    }//GEN-LAST:event_jMenuCambiosCityActionPerformed
+
+    private void jMenuConsultasCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuConsultasCityActionPerformed
+        // TODO add your handling code here:
+        ConsultasCity coCi = new ConsultasCity();
+        coCi.setVisible(true);
+    }//GEN-LAST:event_jMenuConsultasCityActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -260,18 +304,18 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuItem jMenuAgregarA;
+    private javax.swing.JMenuItem jMenuAltasCity;
     private javax.swing.JMenuItem jMenuAltasCo;
     private javax.swing.JMenuItem jMenuBajasA;
+    private javax.swing.JMenuItem jMenuBajasCity;
     private javax.swing.JMenuItem jMenuBajasCo;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuCambiosA;
+    private javax.swing.JMenuItem jMenuCambiosCity;
     private javax.swing.JMenuItem jMenuCambiosCo;
     private javax.swing.JMenuItem jMenuConsultasA;
+    private javax.swing.JMenuItem jMenuConsultasCity;
     private javax.swing.JMenuItem jMenuConsultasCo;
-    private javax.swing.JMenuItem jMenuItem10;
-    private javax.swing.JMenuItem jMenuItem11;
-    private javax.swing.JMenuItem jMenuItem12;
-    private javax.swing.JMenuItem jMenuItem9;
     // End of variables declaration//GEN-END:variables
       
 }
