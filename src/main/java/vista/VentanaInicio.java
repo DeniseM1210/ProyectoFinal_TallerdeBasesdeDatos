@@ -40,10 +40,10 @@ public class VentanaInicio extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuAgregarA = new javax.swing.JMenuItem();
+        jMenuBajasA = new javax.swing.JMenuItem();
+        jMenuCambiosA = new javax.swing.JMenuItem();
+        jMenuConsultasA = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
@@ -63,32 +63,37 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         jMenu1.setText("Actor");
 
-        jMenuItem1.setText("Add");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuAgregarA.setText("Add");
+        jMenuAgregarA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jMenuAgregarAActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jMenu1.add(jMenuAgregarA);
 
-        jMenuItem2.setText("Delete");
-        jMenu1.add(jMenuItem2);
-
-        jMenuItem3.setText("Update");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        jMenuBajasA.setText("Delete");
+        jMenuBajasA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                jMenuBajasAActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem3);
+        jMenu1.add(jMenuBajasA);
 
-        jMenuItem4.setText("Search");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        jMenuCambiosA.setText("Update");
+        jMenuCambiosA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                jMenuCambiosAActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem4);
+        jMenu1.add(jMenuCambiosA);
+
+        jMenuConsultasA.setText("Search");
+        jMenuConsultasA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuConsultasAActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuConsultasA);
 
         jMenuBar1.add(jMenu1);
 
@@ -146,17 +151,29 @@ public class VentanaInicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jMenuAgregarAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuAgregarAActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+        AltasStaff alAc = new AltasStaff();
+        alAc.setVisible(true);
+    }//GEN-LAST:event_jMenuAgregarAActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+    private void jMenuCambiosAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuCambiosAActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+        CambiosActor ca = new CambiosActor();
+        ca.setVisible(true);
+    }//GEN-LAST:event_jMenuCambiosAActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+    private void jMenuConsultasAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuConsultasAActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+        ConsultasActor coA = new ConsultasActor();
+        coA.setVisible(true);
+    }//GEN-LAST:event_jMenuConsultasAActionPerformed
+
+    private void jMenuBajasAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuBajasAActionPerformed
+        // TODO add your handling code here:
+        BajasActor ba = new BajasActor();
+        ba.setVisible(true);
+    }//GEN-LAST:event_jMenuBajasAActionPerformed
 
     /**
      * @param args the command line arguments
@@ -198,14 +215,14 @@ public class VentanaInicio extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenuItem jMenuAgregarA;
+    private javax.swing.JMenuItem jMenuBajasA;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuCambiosA;
+    private javax.swing.JMenuItem jMenuConsultasA;
     private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem12;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
